@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>空中巴士介紹 Airbus Introduction</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="這是一個在介紹飛機的網頁，在這裡你可以看到關於空中巴士製造飛機的歷史。"/>
+    <meta name="keywords" content="飛機, 飛機歷史, 飛機介紹, plane, 空中巴士, Airbus"/>
+    <meta name="author" content="Ricky"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: beige;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+            padding: 10px 0;
+        }
+        .container {
+            position: relative;
+            border: 3px dashed black;
+            margin-top: 60px; 
+        }
+        .container:hover {
+            border-color: chartreuse;
+            color: red;
+        }
+        .text {
+            text-align: center;
+            font-size: 35px;
+        }
+        .text p {
+            display: inline-block;
+        }
+        .href {
+            font-size: 25px;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .href a {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            text-decoration: none;
+            color: black;
+            border: 3px dashed black;
+            padding: 5px;
+        }
+        .href a:hover {
+            border-color: red;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        飛機歷史~歷史飛機(空中巴士)
+    </div>
+
+    <div class="container">
+        <img src="螢幕擷取畫面 2024-04-26 201705.png" width="100%"  alt="Airbus image"/>
+    </div>
+
+    <div class="text">
+        <p>空中巴士公司（Airbus）成立於1970年</p>
+        <p>是一家歐洲跨國航空航天公司，總部位於法國的圖盧茲</p>
+        <p>空中巴士公司是世界上最大的商用飛機製造商之一</p>
+        <p>也是全球最大的飛機製造商之一 </p>
+        <p>而1972年空中巴士的第一款飛機進行了第一次試飛....</p>
+    </div>
+    
+    <br>
+    
+    <div class="href">
+        <a href="airbus_300.html">>> 第一款客機 A300</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="這是一個在介紹飛機的網頁，在這裡你可以看到關於波音公司製造飛機的歷史。"/>
+    <meta name="keywords" content="飛機, 飛機歷史, 飛機介紹, plane, 波音公司, Boeing, 航空, 商業飛機"/>
+    <meta name="author" content="Ricky"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>波音公司介紹 - 飛機歷史與發展</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: beige;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+            padding: 10px 0;
+        }
+        .container {
+            position: relative;
+            padding-top: 60px; /* 用來補償 fixed header 的高度 */
+        }
+        .text {
+            position: absolute;
+            top: 0;
+            left: 450px;
+            font-size: 30px;
+        }
+        .right-bottom {
+            font-size: 20px;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            border: 3px dashed black;
+            padding: 3px;
+            transition: color 0.3s, border-color 0.3s;
+            text-decoration: none;
+            color: inherit;
+        }
+        .right-bottom:hover {
+            color: red;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        飛機歷史~歷史飛機(波音公司)
+    </div>
+
+    <div class="container">
+        <img src="screenshot.png.png" height="570px" alt="Boeing image">
+        <div class="text">
+            <p>波音公司的創始人 威廉·E·波音（William E. Boeing）</p>
+            <p>起初公司主要從事木材製品生產，但很快轉型為飛機製造業。</p>
+            <p>1958年，波音公司生產了第一架成功商業化的飛機，波音707。</p>
+            <p>它標誌著民航飛行的新時代...</p>
+            <hr>
+        </div>
+    </div>
+
+    <a href="#" class="right-bottom">
+        <p>>> 新時代客機波音707</p>
+    </a>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE >
+<html>
+    <hend>
+        <meta charset="UTF-8"/>
+        <meta charset="discountprice" content="這是一個在介紹飛機的網頁，在這裡你可以看到關於飛機的歷史與飛機攝影照片"/>
+        <meta name="kewwords" content="飛機, 飛機歷史, 飛機介紹, plane, 飛機攝影"/>
+        <meta name="author" content="Ricky"/>
+        <meta name="viewport" content="width=device-widht, initial-scale=1.0"/>
+        <title>Airplane Introduce</title>
+        
+    </hend>
+    <body>
+      <h1></h1>  
+      
+      <div style="
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: beige;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999; 
+      ">
+      飛機歷史~歷史飛機
+      </div>
+
+
+      <div style="position: relative; font-size: 40px; text-align: center;">
+        <p style="position: absolute; top: 50px; left: 0; right: 0; margin: auto;">謝謝你的捧場</p>
+      </div>
+
+      <div style="position: relative; font-size: 40px; text-align: center;">
+        <p style="position: absolute; top: 130px; left: 0; right: 0; margin: auto;">願意點進來看我辛苦完成的成果</p>
+      </div>
+
+      <div style="position: relative; font-size: 40px; text-align: center;">
+        <p style="position: absolute; top: 210px; left: 0; right: 0; margin: auto;">這次介紹的內容主要是二戰後的商用飛機飛機製造史</p>
+      </div>
+
+      <div style="position: relative; font-size: 40px; text-align: center;">
+        <p style="position: absolute; top: 320px; left: 0; right: 0; margin: auto;">繼續看下去吧!!!</p>
+      </div>
+
+
+
+
+
+      <div style="position: relative;">
+        <div style="position: absolute; top: 500px; left: 1px;">
+          <p style="font-size: 30px;">波音公司</p>
+          <div id="boeingImage" style="display: block;">
+            <img src="C:\Users\ricky\OneDrive\桌面\7474\DSC_0013.jpg" height="400px">
+          </div>
+        </div>
+        <div style="position: absolute; top: 535px; left: 220px; font-size: 25px;">
+          <a href="boing_itd.html" style="text-decoration: none; color: black; border: 3px dashed black; padding: 5px;" onmouseover="this.style.borderColor='red'; this.style.color='red';" onmouseout="this.style.borderColor='black'; this.style.color='black';">點我了解</a>
+        </div>
+      </div>
+      
+      <div style="position: relative;">
+        <div style="position: absolute; top: 500px; right: 1px;">
+          <p style="font-size: 30px;">空中巴士</p>
+          <div id="airbusImage" style="display: block;">
+            <img src="C:\Users\ricky\OneDrive\桌面\DSC_0005.jpg" height="400px" style="float: right;">
+          </div>
+        </div>
+        <div style="position: absolute; top: 535px; right: 240px; font-size: 25px;">
+          <a href="airbus_itd.html" style="text-decoration: none; color: black; border: 3px dashed black; padding: 5px;" onmouseover="this.style.borderColor='red'; this.style.color='red';" onmouseout="this.style.borderColor='black'; this.style.color='black';">點我了解</a>
+        </div>
+      </div>
+      
+      <script>
+        var boeingImages = [
+          "C:\\Users\\ricky\\OneDrive\\桌面\\7474\\DSC_0013.jpg",
+          "C:\\Users\\ricky\\OneDrive\\桌面\\7474\\DSC_1624.jpg",
+          "C:\\Users\\ricky\\OneDrive\\桌面\\7474\\_DSC3392.JPG",
+          "C:\\Users\\ricky\\OneDrive\\桌面\\7474\\DSC_0585.jpg",
+          "C:\\Users\\ricky\\OneDrive\\桌面\\7474\\DSC_1105.jpg",
+          "C:\\Users\\ricky\\OneDrive\\桌面\\7474\\DSC_9149.jpg"
+        ];
+      
+        var airbusImages = [
+          "C:\\Users\\ricky\\OneDrive\\桌面\\DSC_0005.jpg",
+          "C:\\Users\\ricky\\OneDrive\\桌面\\A380\\DSC_0710.jpg",
+          "C:\\Users\\ricky\\OneDrive\\桌面\\A380\\DSC_1288.jpg",
+          "C:\\Users\\ricky\\OneDrive\\桌面\\A380\\DSC_3466.jpg",
+          "C:\\Users\\ricky\\OneDrive\\桌面\\A380\\DSC_3471.jpg"
+        ];
+      
+        var boeingImageIndex = 0;
+        var airbusImageIndex = 0;
+      
+        function nextBoeingImage() {
+          boeingImageIndex = (boeingImageIndex + 1) % boeingImages.length;
+          document.getElementById("boeingImage").innerHTML = '<img src="' + boeingImages[boeingImageIndex] + '" height="400px">';
+          setTimeout(nextBoeingImage, 3000); // Change slide every second
+        }
+      
+        function nextAirbusImage() {
+          airbusImageIndex = (airbusImageIndex + 1) % airbusImages.length;
+          document.getElementById("airbusImage").innerHTML = '<img src="' + airbusImages[airbusImageIndex] + '" height="400px" style="float: right;">';
+          setTimeout(nextAirbusImage, 3000); // Change slide every second
+        }
+      
+        nextBoeingImage(); // Start the Boeing slideshow
+        nextAirbusImage(); // Start the Airbus slideshow
+      </script>
+    
+      
+
+
+    </body>
+</html>  
